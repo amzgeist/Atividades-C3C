@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+    <script>function formulabaskhara(){    
+        alert("Vamos calcular a formula de baskhara para você! ")
+        let a = prompt("Sabendo que a é o valor que multiplica x2, digite o valor de a ")
+        let b = prompt("Sabendo que b é o valor que multiplica x, digite o valor de b ")
+        let c = prompt("Sabendo que c é o valor isolado da equação, digite o valor de c ")
+        delta = (b*b) - (4*a*c)
+        if (delta < 0){
+            alert("Seu delta é negativo!")
+        }
+        else{
+            x1 = (b*(-1) + Math.sqrt(delta)) / (2*a)
+            x2 = (b*(-1) - Math.sqrt(delta)) / (2*a)
+            let resultados = Array(x1, x2);
+            alert(`O valor de seu X1 é ${resultados[0]} e o valor de seu X2 é ${resultados[1]}`);
+        }
+    
+    }
+    
+    formulabaskhara();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

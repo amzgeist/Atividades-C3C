@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulos</title>
+
+    <script>alert("****Bem vindo ao verificador de tipos do triangulo****")
+    alert("Basta digitar o valor dos lados do triangulo para saber o seu tipo, vamos lá!")
+    let lado1 = prompt("Digite o valor do primeiro lado")
+    let lado2 = prompt("Digite o valor do segundo lado")
+    let lado3 = prompt("Digite o valor do terceiro lado")
+    if (lado1 == lado2 && lado2 == lado3){
+        alert("Seu triangulo é EQUILATERO")
+
+    }
+    else if(lado1 == lado2 ^ lado2 == lado3 ^ lado1 == lado3){ //Fiz a utilização de XOR pois caso usasse apenas o OU poderia
+        alert("Seu triangulo é ISÓSCELES")                       //ocorrer de ele considerar um isósceles como equilatero
+                                                                //pois os 3 lados sendo iguais, tambem iria satisfazer a
+    }                                                           //condição de OU, causando má interpretação.
+    else if(lado1 != lado2 && lado2 != lado3 && lado1 != lado3){ 
+        alert("Seu triangulo é ESCALENO")
+    
+    }</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>
